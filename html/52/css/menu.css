@@ -1,6 +1,7 @@
 #main {
     height: 500px;
     background: url(../images/steak3.jpeg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 #menu {

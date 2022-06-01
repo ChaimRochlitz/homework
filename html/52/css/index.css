@@ -15,32 +15,32 @@ p {
 
 .section2 {
     display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 .logo {
     display: inline-block;
-    width: 759.6px;
-    height: 400px;
-    padding-top: 1.5em;
+    height: 500px;
+    width: 50%;
     text-align: center;
     background: url(../images/logo.png) no-repeat;
+    background-size: cover;
 }
 
 .message {
     display: inline-block;
-    width: 759.6px;
-    height: 400px;
-    padding-top: 15px;
+    height: 500px;
+    width: 50%;
     text-align: center;
     background: url(../images/bg.jpeg) no-repeat;
+    background-size: cover;
     color: #fff;
 }
 
 .message h2 {
-    padding-left: 200px;
     font-size: 3em;
     font-weight: normal;
-
 }
 
 .message p {
