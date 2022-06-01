@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    color: #636161;
+}
+
+nav {
+    display: flex;
+    height: 3.2em;
+    padding-top: 2em;
+    justify-content: center;
+}
+
+#name {
+    padding-right: 30em;
+}
+
+.nav {
+    padding-left: 14em;
+}
+
+nav a {
+    padding: 0 1.5em;
+    color: #636161;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #000000
+}

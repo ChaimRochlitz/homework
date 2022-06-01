@@ -1,0 +1,70 @@
+section {
+    position: absolute;
+    width: 100%;
+    height: 1800px;
+    background: linear-gradient(rgba(241, 236, 236, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+#cigars,
+#soup,
+#steak {
+    margin: auto;
+    margin-top: 50px;
+    padding: 1em;
+    height: 500px;
+    width: 500px;
+    border: 2px solid #646464;
+    text-align: center;
+}
+
+ul {
+    padding-top: 100px;
+}
+
+li {
+    list-style: none;
+    color: #fff;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+#cigars {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/cigars.jpeg) no-repeat;
+}
+
+#cigars:hover {
+    background: url(../images/cigars.jpeg) no-repeat;
+    cursor: pointer;
+}
+
+#cigars:hover li {
+    display: none;
+}
+
+#soup {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/soup.jpeg) no-repeat;
+}
+
+#soup:hover {
+    background: url(../images/soup.jpeg) no-repeat;
+    cursor: pointer;
+}
+
+#soup:hover li {
+    display: none;
+}
+
+#steak {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/steak.jpeg) no-repeat;
+}
+
+#steak:hover {
+    background: url(../images/steak.jpeg) no-repeat;
+    cursor: pointer;
+}
+
+#steak:hover li {
+    display: none;
+}

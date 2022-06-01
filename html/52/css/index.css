@@ -1,0 +1,52 @@
+main {
+    height: 700px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/resteraunt.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+main h1,
+p {
+    margin: 0;
+    padding-top: 1em;
+    font-size: 1.50em;
+    color: #ffffff;
+}
+
+.section2 {
+    display: flex;
+}
+
+.logo {
+    display: inline-block;
+    width: 759.6px;
+    height: 400px;
+    padding-top: 1.5em;
+    text-align: center;
+    background: url(../images/logo.png) no-repeat;
+}
+
+.message {
+    display: inline-block;
+    width: 759.6px;
+    height: 400px;
+    padding-top: 15px;
+    text-align: center;
+    background: url(../images/bg.jpeg) no-repeat;
+    color: #fff;
+}
+
+.message h2 {
+    padding-left: 200px;
+    font-size: 3em;
+    font-weight: normal;
+
+}
+
+.message p {
+    width: 300px;
+    padding-left: 100px;
+    font-size: 1.2em;
+    text-align: left;
+    line-height: 1.4em;
+}
