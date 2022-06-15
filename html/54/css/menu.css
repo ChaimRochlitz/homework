@@ -1,0 +1,39 @@
+#main {
+    height: 500px;
+    background: url(../images/steak3.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#menu {
+    text-align: center;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu li {
+    padding: 1em 0em;
+    font-size: 1.2em;
+}
+
+#menu a {
+    color: #636161;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #000000
+}
+
+#hillel,
+#bottle,
+#bar {
+    text-decoration: line-through;
+}
+#asterisk {
+    float: right;
+    padding: 0 3em 2em 0;
+    font-style: italic;
+    color:#636161;
+}
