@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Vacations In Paradise";
+    src: url(../fonts/VacationsInParadisePersonalUse-qwml.ttf);
+}
+
+main {
+    height: 700px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/resteraunt.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: 'Vacations In Paradise', cursive;
+}
+
+main h1,
+p {
+    margin: 0;
+    padding-top: 1em;
+    font-size: 1.50em;
+    color: #ffffff;
+}
+
+.section2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.logo {
+    display: inline-block;
+    height: 500px;
+    width: 50%;
+    text-align: center;
+    background: url(../images/logo.png) center center no-repeat;
+    background-size: cover;
+}
+
+.message {
+    display: inline-block;
+    height: 500px;
+    width: 50%;
+    text-align: center;
+    background: linear-gradient(rgba(28, 28, 55, 0.9), rgba(58, 53, 70, 0.9));
+    background-size: cover;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+}
+
+.message q {
+    display: inline-block;
+    max-width: 300px;
+    margin: auto;
+    padding-top: 5em;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    letter-spacing: 0.01em;
+    font-size: 2em;
+}
