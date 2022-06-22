@@ -15,13 +15,11 @@ body {
 
 .discover {
     position: absolute;
-    width: 60%;
+    width: 800px;
     height: 200px;
     top: 1em;
     left: 50%;
     transform: translate(-50%);
-    width: 15em;
-    height: 2em;
     margin: auto;
     text-align: center;
     line-height: 200px;
@@ -83,7 +81,8 @@ li {
 
 #cover {
     position: absolute;
-    width: 60%;
+    min-width: 250px;
+    max-width: 60%;
     height: 450px;
     left: 0;
     right: 0;
@@ -119,8 +118,28 @@ h4 {
     padding-top: 2em
 }
 
-@media screen and(max-with: 400px) {
+@media screen and (max-width: 400px) {
     .discover {
-        width: 40%;
+        width: 350px;
+        font-size: 1.2em;
+    }
+    #info{
+        height: 700px;
+    }
+    #contact,
+    #hours {
+    display:inline-block;
+    width: 150px;
+    height: 75px;
+    }
+    #section2{
+        margin-top: 450px;
+    }
+
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+    .discover {
+        width: 600px;
+        font-size: 1.8em;
     }
 }
