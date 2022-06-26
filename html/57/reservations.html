@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/reservations.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="fav_icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav_icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav_icon/favicon-16x16.png">
+    <link rel="manifest" href="fav_icon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Hillel's Sandwich</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a id="name" href="index.html">Hillel's Steakhouse</a>
+            <img id="logo" src="images/nav_logo.png" alt="">
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About Us</a>
+                <a href="reservations.html">Reservations</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="section1">
+        <h1 id="arrows">
+            &#x3c; &#x3e;
+        </h1>
+
+        <table>
+            <caption>Select your availability</caption>
+
+            <thead>
+                <tr>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+        <div id="hoverme">
+            <h1>
+                Hover <br> Me!
+            </h1>
+        </div>
+
+        <div id="hovercells">
+            <div id="hover">
+                <div>#fff: Closed/Reserved</div>
+                <div>#56545be6: Available</div>
+
+            </div>
+        </div>
+        <div class="section2">
+
+            <h1>Get in touch with us!</h1>
+            <form action="feedback.php">
+                <label> First Name <input type="text" name=firstName placeholder="Enter first name"></label>
+                <label> Last Name <input type="text" name=lastName placeholder="Enter last name"></label>
+                <label> Email <input type="email" name=email placeholder="123@example.com"></label>
+                <label> Date visited <input type="date" name=date placeholder="Enter last name"></label>
+                <label> Message <textarea name=message rows="12" cols="30"></textarea></label>
+
+            </form>
+        </div>
+</body>
+
+</html>

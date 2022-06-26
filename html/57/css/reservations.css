@@ -1,0 +1,142 @@
+.section1 {
+    position: relative;
+    height: 900px;
+    background: linear-gradient(rgba(191, 191, 205, 0.9), rgba(58, 53, 70, 0.9));
+}
+
+#arrows {
+    color: #fff;
+    position: absolute;
+    top: 200px;
+    right: 80px;
+    font-size: 50px;
+}
+
+#arrows:hover {
+    cursor: pointer;
+}
+caption{
+    padding: 1em 0em;
+    font-size: 3em;
+    color: #fff;
+}
+
+table {
+    width: 1100px;
+    height: 600px;
+    margin:auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 50px 15px rgb(222, 223, 228);
+    border-radius: 0.5em;
+}
+
+th {
+    padding-bottom: 8px;
+}
+
+td {
+    background: linear-gradient(rgba(58, 58, 77, 0.9), rgba(86, 84, 91, 0.9));
+    box-shadow: 0 0 4px 1px #dedeec;
+    width: 20px;
+    color: rgba(86, 84, 91, 0.9);
+    text-align: center;
+    font-size: 28px;
+}
+
+td:last-of-type {
+    background: none;
+}
+
+td:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: color 1s;
+    color: antiquewhite;
+}
+#hovercells {
+    position: absolute;
+    top: 35%;
+    left: -17%;
+    width: 300px;
+    height: 140px;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 0 2px 2px #818194;
+    border-radius: 0.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(130, 123, 185);
+    z-index: 5;
+    transition: transform 3s;
+
+}
+
+#hovercells:hover {
+    cursor: pointer;
+    transform: translateX(100%);
+}
+
+#hoverme {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    color: rgba(255, 255, 255, 0.3);
+    animation: hoverme 2s linear infinite;
+}
+
+#hoverme:hover {
+    cursor: pointer;
+}
+
+#hoverme:hover~#hovercells {
+    transform: translateX(100%);
+}
+
+@keyframes hoverme {
+    0% {
+        top: 35%;
+    }
+
+    25% {
+        top: 34%;
+    }
+
+    50% {
+        top: 36%;
+    }
+
+    75% {
+        top: 34%;
+    }
+
+    100% {
+        top: 35%;
+    }
+}
+
+.section2{
+    height: 600px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/brickwall.jpg) no-repeat;
+}
+.section2 h1{
+    padding-top: 1em;
+    color: #fff;
+    font-size: 2em;
+}
+form{
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+label{
+    display: block;
+    padding: .5em;
+}
+input{
+    display: inline-block;
+    margin: auto;
+    width: 500px;
+    border-radius: 0.3em;
+}

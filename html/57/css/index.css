@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Vacations In Paradise";
+    src: url(../fonts/VacationsInParadisePersonalUse-qwml.ttf);
+}
+
+main {
+    height: 700px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/resteraunt.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: 'Vacations In Paradise', cursive;
+}
+
+main h1,
+p {
+    margin: 0;
+    padding-top: 1em;
+    font-size: 1.50em;
+    color: #ffffff;
+}
+
+.section2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.logo {
+    display: inline-block;
+    height: 500px;
+    width: 50%;
+    text-align: center;
+    background: url(../images/logo.png) center center no-repeat;
+    background-size: cover;
+}
+
+.message {
+    display: inline-block;
+    height: 500px;
+    width: 50%;
+    text-align: center;
+    background: linear-gradient(rgba(28, 28, 55, 0.9), rgba(58, 53, 70, 0.9));
+    background-size: cover;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+}
+
+.message q {
+    display: inline-block;
+    max-width: 300px;
+    margin: auto;
+    padding-top: 5em;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    letter-spacing: 0.01em;
+    font-size: 2em;
+}
+
+.section3 {
+    height: 700px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(../images/brickwall.jpg) no-repeat fixed;
+}
+
+.cards {
+    height: 500px;
+    margin: auto;
+    padding-top: 7em;
+    text-align: center;
+}
+
+#menu,
+#bar,
+#restaurant {
+    display: inline-block;
+    margin: 0 6em;
+    color: #fff;
+}
+
+#menu img,
+#bar img,
+#restaurant img {
+    border: 3px solid #fff;
+    object-fit: initial;
+    box-shadow: -3em -3em 2.5em 0em rgba(28, 28, 55, 0.9);
+    transition: transform .5s ease-in-out;
+}
+
+#menu:hover img,
+#bar:hover img,
+#restaurant:hover img {
+    box-shadow: 0 0 5em 3em rgba(231, 231, 237, 0.9);
+    transform: rotate(360deg);
+}
+
+a {
+    text-decoration: none !important;
+    color: #fff;
+}

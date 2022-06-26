@@ -1,0 +1,27 @@
+body {
+    font-family: 'Dancing Script', cursive;
+}
+
+#section1 {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(rgba(29, 29, 60, 0.9), rgba(44, 40, 54, 0.9));
+}
+
+#p {
+    max-width: 70%;
+    padding-top: 5%;
+    padding-left:5%;
+    font-size: 2em;
+    color: #fff;
+}
+p{
+    margin: 0;
+    padding-top: 1em;
+}
+
+#video {
+    object-fit: initial;
+    width: 100%;
+    height: 600px;
+}

@@ -1,0 +1,145 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    box-sizing: border-box;
+}
+
+#sub_body {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/brickwall.jpg) no-repeat;
+    background-size: cover;
+}
+
+.main {
+    width: 100%;
+    height: 400px;
+}
+
+.discover {
+    position: absolute;
+    width: 800px;
+    height: 200px;
+    top: 1em;
+    left: 50%;
+    transform: translate(-50%);
+    margin: auto;
+    text-align: center;
+    line-height: 200px;
+    color: #fff;
+    font-size: 3em;
+    letter-spacing: 0.7rem;
+}
+
+#info {
+    position: absolute;
+    width: 60%;
+    height: 300px;
+    top: 12em;
+    left: 50%;
+    transform: translate(-50%);
+    border: transparent;
+    border-radius: 1em;
+    background: #fff;
+    text-align: center;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#contact,
+#hours {
+    display: inline-block;
+    width: 300px;
+    height: 150px;
+}
+
+#contact {
+    padding-right: 3em;
+}
+
+#hours {
+    padding-left: 3em;
+}
+
+#hours li:nth-child(even) {
+    color: #000;
+}
+
+h1 {
+    padding-bottom: 0.3em;
+}
+
+li {
+    list-style: none;
+    padding-top: 0.5em;
+}
+
+#section2 {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin-top: 5em;
+    text-align: center;
+}
+
+#cover {
+    position: absolute;
+    min-width: 250px;
+    max-width: 60%;
+    height: 450px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 1em;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    color: #fff;
+}
+
+#cover h1 {
+    padding-top: 10rem;
+}
+
+#cover:hover {
+    display: none;
+}
+
+iframe {
+    border-radius: 1.2em;
+    width: 60%;
+}
+
+#section3 {
+    width: 100%;
+    height: 75px;
+}
+
+h4 {
+    margin: 0;
+    float: right;
+    color: #fff;
+    padding-right: 2em;
+    padding-top: 2em
+}
+
+@media screen and (max-width: 400px) {
+    .discover {
+        width: 350px;
+        font-size: 1.2em;
+    }
+    #info{
+        height: 700px;
+    }
+    #contact,
+    #hours {
+    display:inline-block;
+    width: 150px;
+    height: 75px;
+    }
+    #section2{
+        margin-top: 450px;
+    }
+
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+    .discover {
+        width: 600px;
+        font-size: 1.8em;
+    }
+}
