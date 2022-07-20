@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 5% repeat(3, 30%) 5%;
+    grid-template-areas:
+        "nav nav nav nav nav"
+        ". sub sub sub    ."
+        ". main main main ."
+        ". sign sign sign ."
+        ". fin fin fin ."
+        ". about about about ."
+        "foot foot foot foot foot";
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+nav,
+footer {
+    grid-area: nav;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: black;
+    height: 3em;
+}
+
+nav ul {
+    display: flex;
+    padding-left: 5%;
+    color: #fff;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding-right: 1em;
+    text-transform: capitalize;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+sub {
+    grid-area: sub;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: lightgray;
+    text-align: center;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+
+}
+
+sub h1 {
+    text-transform: uppercase;
+}
+
+sub h2 span {
+    font-style: italic;
+}
+
+main {
+    grid-area: main;
+    grid-column-start: 2;
+    grid-column-end: 5;
+
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.shira,
+.mac,
+.candy {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.shira img,
+.mac img,
+.candy img {
+    width: 100%;
+}
+
+.shira {
+    border-left: solid 1px gray;
+    border-right: solid 1px gray;
+}
+
+.sign {
+    grid-area: sign;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    margin-top: 2em;
+    padding-bottom: 1em;
+    border: transparent;
+    border-radius: 0.5em;
+    background-color: lightgray;
+    text-align: center;
+}
+
+form {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+input {
+    box-shadow: 3px 3px 2px black;
+    border-radius: 0.5em;
+    margin-right: 1em;
+}
+
+.finance {
+    grid-area: fin;
+    grid-column-start: 2;
+    grid-column-end: 5;
+
+}
+
+table {
+    margin: auto;
+    margin-top: 1em;
+    border-spacing: 0;
+    width: 80%;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+thead {
+    text-align: center;
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid black;
+}
+
+tr:hover {
+    background-color: lightblue;
+}
+
+tbody tr td {
+    text-align: right;
+}
+
+td:nth-of-type(1) {
+    text-align: center;
+    font-weight: bold;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: lightblue;
+}
+
+tbody td:nth-of-type(6) {
+    color: red;
+}
+
+tbody td:nth-of-type(25) {
+    text-align: right;
+}
+
+.about {
+    grid-area: about;
+    grid-column-start: 2;
+    grid-column-end: 5;
+
+}
+
+footer {
+    grid-area: foot;
+    color: #fff;
+    padding-left: 5%;
+    padding-top: 1em;
+}
+
+@media screen and (max-width: 1000px) {
+    .images {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shira {
+        border: none;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        margin-bottom: 0.5em;
+    }
+}
