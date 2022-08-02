@@ -41,7 +41,7 @@ console.log(multiply(2, 5));
 function getMultiplier() {
     return function (a, b) {
         return a * b;
-    }
+    };
 }
 
 const multiplier = getMultiplier();
