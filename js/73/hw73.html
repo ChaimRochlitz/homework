@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        #msgBox {
+            width: 300px;
+            height: 200px;
+            margin: auto;
+            color: whitesmoke;
+            background-color: lightblue;
+            text-align: center;
+            border: 1px solid black;
+            box-shadow: 0 0 10px 20px rgb(185, 181, 195);
+            ;
+            display: none;
+        }
+
+        #input {
+            width: 600px;
+            height: 300px;
+            top: 800px;
+            margin: auto;
+            color: whitesmoke;
+            background-color: black;
+            text-align: center;
+            border: 1px solid black;
+            display: block;
+        }
+
+        p {
+            /*position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);*/
+        }
+
+        #xInput {
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+    <div id="msgBox">
+        <p id="inputMsg"></p>
+
+        <button id="xMsgBox">Dismiss</button>
+    </div>
+
+    <div>
+        <input type="text" id="input">
+        <button id="xInput">OK</button>
+    </div>
+    <script src="hw73.js"></script>
+</body>
+
+</html>
