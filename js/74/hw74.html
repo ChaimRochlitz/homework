@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .messageBox {
+            background-color: lightgreen !important;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="msgText">
+    modal<input type="checkbox" id="modal">
+    <button id="showMsg">show</button>
+    <hr>
+
+    <script src="hw74.js"></script>
+    <script>
+        app.messageBox.show('Hello World!');
+
+        const msgText = document.getElementById('msgText');
+        const modal = document.getElementById('modal');
+        let array = ['yes', 'no', 'maybe'];
+        document.getElementById('showMsg').addEventListener('click', () => {
+            app.messageBox.show(msgText.value, modal.checked.array);
+        });
+    </script>
+</body>
+
+</html>
