@@ -86,14 +86,13 @@
             form.append('<button>Dismiss</button>')
         });
 
-        //this isn't working
         
        $('#check').change(function(){
            if(this.checked){
-            $("input['type = text']").attr( 'disabled', 'disabled');
+            $("input[type = text]").attr( 'disabled', 'disabled');
            }
            else{
-            $("input['type = text']").prop({disabled: false});
+            $("input[type = text]").prop({disabled: false});
 
            }
        })
