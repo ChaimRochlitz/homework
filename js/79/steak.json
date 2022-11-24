@@ -1,0 +1,17 @@
+{
+  "steak": [
+    {
+      "name": "Steak"
+    },
+    {
+      "ingredients": [
+        "steak",
+        "salt",
+        "pepper"
+      ]
+    },
+    {
+      "url": "steak.jpeg"
+    }
+  ]
+}
