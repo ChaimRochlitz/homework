@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Levy Falkowitz",
+        "picture": "images/levyFalkowitz.jpeg"
+    },
+    {
+        "title": "MBD",
+        "picture": "images/mbd.jpeg"
+    },
+    {
+        "title": "Avraham Fried",
+        "picture": "images/avraham.jpeg"
+    },
+    {
+        "title": "Benny Friedman",
+        "picture": "images/benny.jpeg"
+    },
+    {
+        "title": "Gad Elbaz",
+        "picture": "images/gad.jpeg"
+    },
+    {
+        "title": "Mordechai Schapiro",
+        "picture": "images/schapiro.jpeg"
+    },
+    {
+        "title": "Shloime Daskal",
+        "picture": "images/daskal.jpeg"
+    },
+    {
+        "title": "Simcha Liener",
+        "picture": "images/simcha.jpeg"
+    },
+    {
+        "title": "Lipa Schmelzer",
+        "picture": "images/lipa.jpeg"
+    }
+]

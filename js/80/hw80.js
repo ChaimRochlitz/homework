@@ -15,8 +15,7 @@
         i++;
     });
 
-    video.click(event =>{
-        console.log('video was clicked');
+    video.click(event => {
         event.target.src = videos[event.target.id].url;
 
     });
