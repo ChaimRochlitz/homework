@@ -8,13 +8,13 @@
     const search = $('#search');
 
     search.click(() => {
-        loadUrl(searchBox.value); // need to troubleshoot
+        loadUrl(searchBox.val()); // need to troubleshoot
         displayImages();
     });
 
     async function loadUrl(url) {
         try {
-            const res = await fetch(`'${url}'`);
+            const res = await fetch(`${url}`);
             if (!res.ok) {
                 throw new Error(`${res.status}${res.statusText}`);
             }
