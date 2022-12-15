@@ -35,7 +35,7 @@
     car.Go(80);
     car.print();
 
-    const plane = new Plane('red');
+    const plane = new Plane('blue');
     plane.Go(80);
     plane.print();
 
