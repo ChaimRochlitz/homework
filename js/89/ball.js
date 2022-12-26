@@ -1,13 +1,12 @@
 'use strict';
 
 const theCanvas = document.querySelector('#theCanvas');
-const context = theCanvas.getContext('2d');
 
-const radius = document.querySelector('#radius');
-const color = document.querySelector('#color');
+const size = document.querySelector('#radius');
+const col = document.querySelector('#color');
 const draw = document.querySelector('#draw');
 
-const balls = [''];
+const balls = [];
 
 class Ball {
   x = 50;
@@ -20,6 +19,7 @@ class Ball {
 
   constructor(radius, color) {
     this.radius = radius;
+    const context = theCanvas.getContext('2d');
     context.fillStyle = color;
 
   }
@@ -33,26 +33,29 @@ class Ball {
     context.fill();
 
     if (this.x < 50 || this.x > 1000 - this.radius) {
-      this.dx = -dx;
+      this.dx = -this.dx;
     }
 
     if (this.y < 50 || this.y > 500 - this.radius) {
-      this.dy = -dy;
+      this.dy = -this.dy;
     }
   }
 
 }
 
 draw.addEventListener('click', () => {
-  balls.push(new Ball(radius.value, `${color.value}`));
+  balls.push(new Ball(size.value, `${col.value}`));
 });
 
-  setInterval(balls.forEach(b =>{
-    if(balls.length > 1){
-    b.draw();
-    }
-  }), 1000);
+function drawBalls(){
+  if(balls.length > 0){
+    balls.forEach(b => {
+        b.draw();
+  });
+}}
+
+setInterval(drawBalls(), 1000);
 
 
- 
+
 
