@@ -1,0 +1,10 @@
+{
+    "extends": "eslint:recommended",
+    "parser options": {
+        "ecmaVersion": 8,
+        "sourceType": "module"
+    },
+    "rules": {
+        "eqeqeq": "warn"
+    }
+}
